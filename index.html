@@ -33,9 +33,10 @@
       spread: "none"
     });
 
-    book.opened.then(() => {
-      console.log("EPUB OPENED");
-      rendition.display();
+    rendition.display().then(() => {
+      console.log("RENDER SUCCESS");
+    }).catch(err => {
+      console.error("RENDER ERROR", err);
     });
   </script>
 
