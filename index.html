@@ -23,31 +23,46 @@
 
   <!-- epub.js CDN -->
   <script src="https://unpkg.com/epubjs/dist/epub.min.js"></script>
-
+  
   <script>
-    console.log("HTML LOADED");
-    console.log("ePub:", window.ePub); // 반드시 함수로 찍혀야 함
+  console.log("STEP 0: HTML LOADED");
+  console.log("STEP 1: ePub =", window.ePub); // 반드시 함수로 찍혀야 함
 
-    const book = ePub("./books/sample1.epub");
+  let book;
+  try {
+    book = ePub("books/sample1.epub");
+    console.log("STEP 2: book object created", book);
+  } catch (e) {
+    console.error("STEP 2 ERROR: ePub()", e);
+  }
 
-    //EPUB 파일이 실제로 열린 뒤에 렌더링
-    book.opened.then(() => {
-      console.log("EPUB OPENED");
+  //EPUB 파일이 실제로 열린 뒤에 렌더링
+  book.opened
+    .then(() => console.log("STEP 3: book.opened"))
+    .catch(err => console.error("STEP 3 ERROR: opened", err));
 
-      const rendition = book.renderTo("viewer", {
-        width: "100%",
-        height: "100%",
-        spread: "none"
-      });
+  book.ready
+    .then(() => console.log("STEP 4: book.ready"))
+    .catch(err => console.error("STEP 4 ERROR: ready", err));
 
-      rendition.display()
-        .then(() => console.log("RENDER SUCCESS"))
-        .catch(err => console.error("RENDER ERROR", err));
-    })
-    .catch(err => {
-      console.error("EPUB OPEN ERROR", err);
-    });
-  </script>
+  book.loaded.metadata
+    .then(m => console.log("STEP 5: metadata", m))
+    .catch(err => console.error("STEP 5 ERROR: metadata", err));
+
+  book.loaded.spine
+    .then(s => console.log("STEP 6: spine", s))
+    .catch(err => console.error("STEP 6 ERROR: spine", err));
+
+  const rendition = book.renderTo("viewer", {
+    width: "100%",
+    height: "100%",
+    spread: "none"
+  });
+
+  rendition.display()
+    .then(() => console.log("STEP 7: rendition.display SUCCESS"))
+    .catch(err => console.error("STEP 7 ERROR: display", err));
+</script>
 
 </body>
 </html>
