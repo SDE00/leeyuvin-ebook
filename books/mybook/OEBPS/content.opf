@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="3.0" unique-identifier="BookId" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:language>ko</dc:language>
+    <dc:identifier>1234-5678-9</dc:identifier>
+    <dc:date>2025-04-22</dc:date>
+    <dc:subject>공포</dc:subject>
+    <dc:title>집에 가고 싶니?</dc:title>
+    <dc:creator id="cre">이유빈</dc:creator>
+    <meta refines="#cre" property="role" scheme="이유빈">aut</meta>
+    <dc:publisher>미디어출판학과</dc:publisher>
+    <meta property="dcterms:modified">2025-04-22T23:28:47Z</meta>
+    <dc:identifier id="BookId">urn:uuid:a416a213-6d02-4ad0-b44f-6e6e00cdc81f</dc:identifier>
+    <meta name="Sigil version" content="2.4.2"/>
+    <meta name="cover" content="pyoji.png"/>
+  </metadata>
+  <manifest>
+    <item id="nav.xhtml" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="Style0001.css" href="Styles/comon.css" media-type="text/css"/>
+    <item id="ChosunCentennial_otf.otf" href="Fonts/CC.otf" media-type="font/otf"/>
+    <item id="RiaSans-ExtraBold.ttf" href="Fonts/RS.ttf" media-type="font/ttf"/>
+    <item id="Paperlogy-4Regular.ttf" href="Fonts/PR.ttf" media-type="font/ttf"/>
+    <item id="OG.ttf" href="Fonts/OG.ttf" media-type="font/ttf"/>
+    <item id="Paperlogy-7Bold.ttf" href="Fonts/PB.ttf" media-type="font/ttf"/>
+    <item id="Shilla_CultureB.ttf" href="Fonts/SH.ttf" media-type="font/ttf"/>
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+    <item id="img1.daumcdn.png" href="Images/img1.daumcdn.png" media-type="image/png"/>
+    <item id="HeirofLightBold.ttf" href="Fonts/HL.ttf" media-type="font/ttf"/>
+    <item id="SE_04_18_yeojagwisin_useum_gongpo_hyogwaeum.mp3" href="Audio/hahaha.mp3" media-type="audio/mpeg"/>
+    <item id="baegyeong.png" href="Images/배경.png" media-type="image/png"/>
+    <item id="pyoji.png" href="Images/표지.png" media-type="image/png" properties="cover-image"/>
+    <item id="x90f0e920-cc76-400e-91c2-4bcdac4c7eb0" href="Text/Textxhtml.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="jihacheol_sog_eodum.mp3" href="Audio/subway-darkness.mp3" media-type="audio/mpeg"/>
+    <item id="Script0001.js" href="Misc/Script0001.js" media-type="application/javascript"/>
+    <item id="Textxhtml_0001.xhtml" href="Text/Textxhtml_0001.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0004.xhtml" href="Text/Textxhtml_0004.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0007.xhtml" href="Text/Textxhtml_0007.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0003.xhtml" href="Text/Textxhtml_0003.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0006.xhtml" href="Text/Textxhtml_0006.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0008.xhtml" href="Text/Textxhtml_0008.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0005.xhtml" href="Text/Textxhtml_0005.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0002.xhtml" href="Text/Textxhtml_0002.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0009.xhtml" href="Text/Textxhtml_0009.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0010.xhtml" href="Text/Textxhtml_0010.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0011.xhtml" href="Text/Textxhtml_0011.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0012.xhtml" href="Text/Textxhtml_0012.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0013.xhtml" href="Text/Textxhtml_0013.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0014.xhtml" href="Text/Textxhtml_0014.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0015.xhtml" href="Text/Textxhtml_0015.xhtml" media-type="application/xhtml+xml"/>
+    <item id="Textxhtml_0016.xhtml" href="Text/Textxhtml_0016.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine>
+    <itemref idref="cover.xhtml"/>
+    <itemref idref="nav.xhtml" linear="no"/>
+    <itemref idref="x90f0e920-cc76-400e-91c2-4bcdac4c7eb0"/>
+    <itemref idref="Textxhtml_0001.xhtml"/>
+    <itemref idref="Textxhtml_0002.xhtml"/>
+    <itemref idref="Textxhtml_0003.xhtml"/>
+    <itemref idref="Textxhtml_0004.xhtml"/>
+    <itemref idref="Textxhtml_0005.xhtml"/>
+    <itemref idref="Textxhtml_0006.xhtml"/>
+    <itemref idref="Textxhtml_0007.xhtml"/>
+    <itemref idref="Textxhtml_0008.xhtml"/>
+    <itemref idref="Textxhtml_0009.xhtml"/>
+    <itemref idref="Textxhtml_0010.xhtml"/>
+    <itemref idref="Textxhtml_0011.xhtml"/>
+    <itemref idref="Textxhtml_0012.xhtml"/>
+    <itemref idref="Textxhtml_0013.xhtml"/>
+    <itemref idref="Textxhtml_0014.xhtml"/>
+    <itemref idref="Textxhtml_0015.xhtml"/>
+    <itemref idref="Textxhtml_0016.xhtml"/>
+  </spine>
+</package>
