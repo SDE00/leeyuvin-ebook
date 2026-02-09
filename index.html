@@ -7,11 +7,13 @@
   <style>
     html, body {
       margin: 0;
+      padding: 0;
       height: 100%;
     }
     #viewer {
       width: 100%;
       height: 100vh;
+      background: #fff;
     }
   </style>
 </head>
@@ -22,16 +24,17 @@
   <script src="epub.min.js"></script>
   <script>
     console.log("HTML LOADED");
-  
+
     const book = ePub("books/sample.epub");
-  
+
     const rendition = book.renderTo("viewer", {
       width: "100%",
-      height: "100%"
+      height: "100%",
+      spread: "none"
     });
 
-    book.ready.then(() => {
-      console.log("EPUB READY");
+    book.opened.then(() => {
+      console.log("EPUB OPENED");
       rendition.display();
     });
   </script>
