@@ -1,0 +1,555 @@
+.artist {
+    color: white;
+    display: block;
+    font-family: SH;
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 20px
+    }
+.audio-player {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: red;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 300px
+    }
+.audio-player-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px
+    }
+.calibre {
+    display: block;
+    font-size: 1.29167em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0
+    }
+.calibre1 {
+    display: block;
+    height: 100vh;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center
+    }
+.calibre2 {
+    height: auto;
+    width: auto
+    }
+.calibre3 {
+    display: block;
+    font-size: 1.54839em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.67em
+    }
+.calibre4 {
+    display: block;
+    list-style-type: decimal;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre5 {
+    display: list-item
+    }
+.calibre6 {
+    display: block;
+    list-style-type: decimal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.calibre7 {
+    background-attachment: fixed;
+    background-image: url(images/000001.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    font-size: 1.29167em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px
+    }
+.calibre8 {
+    align-items: center;
+    background-color: #ccc;
+    border-bottom-color: currentColor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color: currentColor;
+    border-left-style: none;
+    border-left-width: medium;
+    border-radius: 50%;
+    border-right-color: currentColor;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-color: currentColor;
+    border-top-style: none;
+    border-top-width: medium;
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 50px
+    }
+.calibre9 {
+    display: none
+    }
+.calibre10 {
+    color: red;
+    display: block;
+    font-family: "RS";
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 60px;
+    padding-bottom: 0.7em;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase
+    }
+.calibre11 {
+    color: white;
+    display: block;
+    font-family: "PR";
+    font-size: 0.77419em;
+    line-height: 2.5;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    text-align: justify
+    }
+.calibre12 {
+    color: #e60000;
+    display: block;
+    font-family: "PB";
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.6);
+    text-transform: uppercase;
+    transform: rotate(-2deg)
+    }
+.calibre13 {
+    animation: fade-blink 3s ease-in-out forwards;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%
+    }
+.calibre14 {
+    text-decoration: line-through
+    }
+.calibre15 {
+    color: white;
+    font-family: "PR";
+    font-size: 0.64583em;
+    left: 10px;
+    line-height: 1.2;
+    position: fixed;
+    text-shadow: none;
+    top: 10px;
+    vertical-align: super;
+    z-index: 1000
+    }
+.controls {
+    display: flex;
+    gap: 30px;
+    justify-content: center
+    }
+.disk {
+    align-items: center;
+    background: linear-gradient(145deg, #d0d0d0, #f5f5f5);
+    border-radius: 50%;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    position: relative;
+    width: 200px
+    }
+.door-author {
+    color: white;
+    display: block;
+    font-size: 1em;
+    line-height: 1.2
+    }
+.door-page {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: #f44;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left-color: #f44;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-radius: 20px;
+    border-right-color: #f44;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-top-color: #f44;
+    border-top-style: solid;
+    border-top-width: 2px;
+    box-shadow: 0 0 30px #600;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: center
+    }
+.door-page-container {
+    align-items: center;
+    color: #f44;
+    display: flex;
+    font-family: "SH";
+    height: 100vh;
+    justify-content: center
+    }
+.door-subtitle {
+    display: block;
+    font-size: 1.54839em;
+    line-height: 1.2;
+    margin-bottom: 10px
+    }
+.door-title {
+    display: block;
+    font-size: 1.54839em;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 20px
+    }
+.laugh-text {
+    animation: shake 1s infinite
+    }
+.p {
+    color: white;
+    display: block;
+    font-family: "PR";
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    text-align: justify
+    }
+.p1 {
+    align-items: center;
+    background-color: #E0F7FF;
+    color: gray;
+    display: flex;
+    font-family: "CC";
+    font-size: 1em;
+    height: 50px;
+    justify-content: flex-start;
+    line-height: 2.5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+    white-space: nowrap;
+    width: 100%
+    }
+.p2 {
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(145deg, rgba(0, 153, 255, 0.85), rgba(0, 102, 204, 0.85));
+    border-bottom-color: rgba(0, 183, 255, 0.7);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left-color: rgba(0, 183, 255, 0.7);
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-radius: 18px;
+    border-right-color: rgba(0, 183, 255, 0.7);
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-top-color: rgba(0, 183, 255, 0.7);
+    border-top-style: solid;
+    border-top-width: 2px;
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.8), 0 0 30px rgba(0, 183, 255, 0.4), 0 0 50px rgba(0, 183, 255, 0.3), 0 0 80px rgba(0, 183, 255, 0.2);
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "HL";
+    font-size: 1em;
+    line-height: 2.5;
+    margin-bottom: 20px;
+    margin-top: 0;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    width: calc(100% - 2em)
+    }
+.p3 {
+    align-items: center;
+    animation: shake 1s infinite;
+    color: red;
+    display: flex;
+    font-family: "OG";
+    font-size: 1.54839em;
+    height: 100vh;
+    justify-content: center;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center
+    }
+.p4 {
+    align-items: center;
+    background-color: black;
+    color: red;
+    display: flex;
+    font-family: "CC";
+    font-size: 1em;
+    height: 50px;
+    line-height: 2.5;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+    width: 100%
+    }
+.p5 {
+    animation: float 2s ease-in-out infinite;
+    color: white;
+    display: block;
+    font-family: "CC";
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    text-align: justify;
+    text-shadow: 0 0 12px rgba(255, 0, 0, 1), 0 0 24px rgba(255, 0, 0, 0.8), 0 0 36px rgba(255, 0, 0, 0.7)
+    }
+.p6 {
+    align-items: center;
+    color: red;
+    display: flex;
+    font-family: "SH";
+    font-size: 1.54839em;
+    height: 100vh;
+    justify-content: center;
+    line-height: 2.5;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.4)
+    }
+.p7 {
+    align-items: center;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    font-family: "SH";
+    font-size: 1.54839em;
+    height: 100vh;
+    justify-content: center;
+    line-height: 2.5;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.4)
+    }
+.p8 {
+    color: white;
+    display: block;
+    font-family: "PB";
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    text-align: right;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.9), 0 0 16px rgba(255, 0, 0, 0.7), 0 0 24px rgba(255, 0, 0, 0.5)
+    }
+.progress {
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    height: 100%;
+    width: 0%
+    }
+.progress-container {
+    background-color: #555;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    height: 5px;
+    margin-bottom: 10px;
+    width: 100%
+    }
+.scrolling-text {
+    animation: moveText 10s linear infinite;
+    position: absolute
+    }
+.scrolling-text1 {
+    animation: scrollText 10s linear infinite;
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap
+    }
+.time-info {
+    display: flex;
+    font-size: 0.77419em;
+    justify-content: space-between;
+    margin-bottom: 20px
+    }
+.title {
+    display: block;
+    font-family: SH;
+    font-size: 1.29032em;
+    line-height: 1.2;
+    margin-bottom: 5px
+    }
+.typing-text {
+    animation: typing 3s steps(20) infinite, blink 0.5s step-end infinite alternate;
+    border-right-color: #333;
+    border-right-style: solid;
+    border-right-width: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0
+    }
+.pcalibre:before {
+    background-color: white;
+    border-radius: 50%;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 100px
+    }
+.pcalibre1:after {
+    background-color: #333;
+    border-radius: 50%;
+    content: "";
+    height: 30px;
+    position: absolute;
+    width: 30px
+    }
+.pcalibre4:after {
+    background: linear-gradient(to right, transparent, #800000, transparent);
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 20%;
+    position: absolute;
+    right: 20%
+    }
+.pcalibre3:focus {
+    outline: none
+    }
+.pcalibre2:hover {
+    background-color: #fff
+    }
+
+@page {
+    margin-bottom: 5pt;
+    margin-top: 5pt
+    }
+
+@page {
+    margin-bottom: 5pt;
+    margin-top: 5pt
+    }
+@font-face {
+    font-family: "CC";
+    font-weight: normal;
+    font-style: normal;
+    src: url(fonts/000000.otf)
+    }
+@font-face {
+    font-family: "HL";
+    font-weight: bold;
+    font-style: normal;
+    src: url(fonts/000001.ttf)
+    }
+@font-face {
+    font-family: "OG";
+    font-weight: normal;
+    font-style: normal;
+    src: url(fonts/000002.ttf)
+    }
+@font-face {
+    font-family: "PR";
+    font-weight: normal;
+    font-style: normal;
+    src: url(fonts/000004.ttf)
+    }
+@font-face {
+    font-family: "PB";
+    font-weight: bold;
+    font-style: normal;
+    src: url(fonts/000003.ttf)
+    }
+@font-face {
+    font-family: "RS";
+    font-weight: 800;
+    font-style: normal;
+    src: url(fonts/000005.ttf)
+    }
+@font-face {
+    font-family: "Sh";
+    font-weight: bold;
+    font-style: normal;
+    src: url(fonts/000006.ttf)
+    }
+

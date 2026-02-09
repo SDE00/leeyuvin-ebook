@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">6d42481b-537d-4fa2-b85e-ec1b0604b60d</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">6d42481b-537d-4fa2-b85e-ec1b0604b60d</dc:identifier>
+        <dc:title>집에 가고 싶니?</dc:title>
+        <dc:creator opf:file-as="알 수 없음" opf:role="aut">이유빈</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (9.2.1) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2025-04-22T00:00:00+00:00</dc:date>
+        <dc:publisher>미디어출판학과</dc:publisher>
+        <dc:language>ko</dc:language>
+        <dc:subject>공포</dc:subject>
+    </metadata>
+    <guide>
+        <reference type="cover" title="표지" href="cover.jpg"/>
+    </guide>
+</package>
