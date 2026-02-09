@@ -36,6 +36,44 @@ document.getElementById("next").addEventListener("click", () => {
   rendition.next();
 });
 
+//==================================================
+// 페이지 수 계산 및 표시
+//==================================================
+// 1. 전체 위치(Locations) 생성
+book.ready.then(() => {
+    // 1024자당 1페이지로 계산 (600x800 사이즈에 적절한 값)
+    return book.locations.generate(1024); 
+}).then(() => {
+    console.log("위치 계산 완료");
+    updatePagination(); // 초기 쪽수 표시
+});
+
+// 2. 페이지 이동 시마다 쪽수 업데이트
+rendition.on("relocated", function(location) {
+    updatePagination(location);
+});
+
+function updatePagination(location) {
+    const pageInfo = document.getElementById("page-info");
+    if (!pageInfo) return;
+
+    // 현재 위치 정보가 없으면 직접 가져옴
+    const currentLocation = location || rendition.currentLocation();
+    
+    if (currentLocation && currentLocation.start) {
+        // 전체 쪽수와 현재 쪽수 계산
+        const totalPages = book.locations.length();
+        const currentPage = book.locations.locationFromCfi(currentLocation.start.cfi);
+        
+        // "현재 / 전체" 형식으로 표기
+        // 위치값이 0부터 시작할 수 있으므로 +1을 해줍니다.
+        pageInfo.innerText = `${currentPage + 1} / ${totalPages}`;
+    }
+}
+
+//==================================================
+// 화면 이동 편의 기능
+//==================================================
 let touchStartX = 0;
 let touchEndX = 0;
 
