@@ -133,3 +133,51 @@ document.addEventListener("keyup", function(e) {
     if ((e.keyCode || e.which) == 37) rendition.prev(); // 왼쪽 화살표
     if ((e.keyCode || e.which) == 39) rendition.next(); // 오른쪽 화살표
 }, false);
+
+//==================================================
+// 오디오 재생 기능
+//==================================================
+//1. bgm 오디오를 재생/일시정지하는 버튼 기능
+rendition.hooks.content.register(function(contents) {
+    // 3장(Textxhtml_0003.xhtml)이 로드되었는지 확인
+    const playBtn = contents.document.getElementById("play-pause");
+    const disk = contents.document.getElementById("disk");
+
+    if (playBtn) {
+        // 거실(index.html)에 있는 오디오 소환
+        const mainAudio = window.parent.document.getElementById("bgm");
+
+        playBtn.addEventListener("click", () => {
+            if (mainAudio.paused) {
+                mainAudio.play();
+                playBtn.innerText = "⏸"; // 일시정지 아이콘으로 변경
+                if (disk) disk.classList.add("rotating"); // 디스크 회전 효과(있다면)
+            } else {
+                mainAudio.pause();
+                playBtn.innerText = "▶"; // 재생 아이콘으로 변경
+                if (disk) disk.classList.remove("rotating");
+            }
+        });
+
+        // 진행바 필요시 추가
+    }
+});
+
+// 2. 효과음 재생 버튼 기능
+rendition.hooks.content.register(function(contents) {
+    // xhtml 내의 'laugh-text' 클래스를 가진 요소를 찾습니다.
+    const laughText = contents.document.querySelector(".laugh-text");
+
+    if (laughText) {
+        laughText.style.cursor = "pointer"; // 클릭 가능하다는 표시
+        laughText.addEventListener("click", () => {
+            // 부모 창(index.html)의 효과음을 실행
+            const sound = window.parent.document.getElementById("sound-eff");
+            if (sound) {
+                sound.pause(); 
+                sound.currentTime = 0; // 처음부터 재생
+                sound.play().catch(err => console.error("효과음 재생 실패:", err));
+            }
+        });
+    }
+});
