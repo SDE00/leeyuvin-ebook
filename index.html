@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>EPUB Portfolio</title>
+
   <style>
     html, body {
       margin: 0;
@@ -12,6 +13,7 @@
     #viewer {
       width: 100%;
       height: 100vh;
+      background: #fff;
     }
   </style>
 </head>
@@ -19,23 +21,32 @@
 
   <div id="viewer"></div>
 
+  <!-- epub.js CDN -->
   <script src="https://unpkg.com/epubjs/dist/epub.min.js"></script>
 
   <script>
     console.log("HTML LOADED");
-    console.log("ePub:", window.ePub); // 이거 반드시 찍혀야 함
+    console.log("ePub:", window.ePub); // 반드시 함수로 찍혀야 함
 
-    const book = ePub("books/sample1.epub");
+    const book = ePub("./books/sample1.epub");
 
-    const rendition = book.renderTo("viewer", {
-      width: "100%",
-      height: "100%",
-      spread: "none"
+    //EPUB 파일이 실제로 열린 뒤에 렌더링
+    book.opened.then(() => {
+      console.log("EPUB OPENED");
+
+      const rendition = book.renderTo("viewer", {
+        width: "100%",
+        height: "100%",
+        spread: "none"
+      });
+
+      rendition.display()
+        .then(() => console.log("RENDER SUCCESS"))
+        .catch(err => console.error("RENDER ERROR", err));
+    })
+    .catch(err => {
+      console.error("EPUB OPEN ERROR", err);
     });
-
-    rendition.display()
-      .then(() => console.log("RENDER SUCCESS"))
-      .catch(err => console.error("RENDER ERROR", err));
   </script>
 
 </body>
