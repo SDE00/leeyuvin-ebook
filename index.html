@@ -22,13 +22,18 @@
   <script src="epub.min.js"></script>
   <script>
     console.log("HTML LOADED");
-
+  
     const book = ePub("books/sample.epub");
+  
     const rendition = book.renderTo("viewer", {
       width: "100%",
       height: "100%"
     });
-    rendition.display();
+
+    book.ready.then(() => {
+      console.log("EPUB READY");
+      rendition.display();
+    });
   </script>
 
 </body>
